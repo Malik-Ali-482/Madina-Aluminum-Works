@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My first javascript</h1>
+<p>Here javascript changes the vaue of source (src) attribute of an
+image.</p>
+<script>
+function light(sw){
+var pic;
+if(sw==0){
+pic="green.jpg"
+}
+else{
+pic="desert.jpg"
+}
+document.getElementById('myImage').src=pic;
+}
+</script>
+<img id="myImage" src="" width="500" >
+
+<p>
+<button type="buttn"onclick="light(0)">GREENERY</button>
+<button type="buttn"onclick="light(1)">DESERT</button>
+</p>
+</body>
+</html>
